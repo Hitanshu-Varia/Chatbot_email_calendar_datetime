@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI ChatBot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1><span class="status-indicator"></span>AI ChatBot</h1>
+            <p>Your intelligent assistant for calculations, emails, calendar events, and more!</p>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="welcome-message">
+                <h2>Welcome! 👋</h2>
+                <p>I'm your AI assistant. I can help you with various tasks:</p>
+                <div class="capabilities">
+                    <div class="capability">
+                        <h4>📧 Email</h4>
+                        <p>Send emails through Gmail</p>
+                    </div>
+                    <div class="capability">
+                        <h4>📅 Calendar</h4>
+                        <p>Create Google Calendar events</p>
+                    </div>
+                    <div class="capability">
+                        <h4>🔢 Math</h4>
+                        <p>Perform calculations</p>
+                    </div>
+                    <div class="capability">
+                        <h4>🕒 Time</h4>
+                        <p>Get current date and time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="typing-indicator" id="typingIndicator">
+            <div class="message-avatar">🤖</div>
+            <div class="typing-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="chat-input">
+            <div class="input-group">
+                <input type="text" id="messageInput" class="message-input" placeholder="Type your message here..." autocomplete="off">
+                <button id="sendButton" class="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
